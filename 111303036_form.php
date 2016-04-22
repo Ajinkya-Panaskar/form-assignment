@@ -1,6 +1,6 @@
 <html>
 <head>
-<b>FORMS FORMS FORMS!!!<br></b>
+<b>FORMS FORMS FORMS!!!<br>This is a form</b>
 	<style>
 		.error {color: #FF0000}
 	</style>
@@ -86,7 +86,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                         echo "Data entered successfully";
                 }
                 else {
-                        echo "Error entering data: " . $conn->error;
+                        echo "Error while entering data: " . $conn->error;
                 }
 		
 		mysqli_close($conn);
